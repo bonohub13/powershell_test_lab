@@ -1,4 +1,4 @@
-# Powershell Test Lab\n<i>A docker container to test out powershell and have fun!</i>
+# Powershell Test Lab<br/><i>A docker container to test out powershell and have fun!</i>
 
 ## Prerequisites
 Install these following programs to use this
