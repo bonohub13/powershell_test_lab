@@ -1,0 +1,14 @@
+version: '3'
+services:
+  powershell-test-lab:
+    build: # powershell-test-lab
+      context: powershell-test-lab
+      args:
+        - UNAME=$UNAME
+        - UID=$UID
+        - GID=$GID
+    image: powershell-test-lab
+    container_name: powershell-test-lab
+    tty: true
+    volumes:
+      - ./powershell-test-lab/scripts:/home/${UNAME}/scripts
