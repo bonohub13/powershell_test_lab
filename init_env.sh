@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-UNAME=user
+UNAME=$USER
 UID=`id -u`
 GID=`id -g`
 
