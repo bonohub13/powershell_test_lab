@@ -1,8 +1,8 @@
 #!/usr/bin/sh
 
-UNAME=$USER
-UID=`id -u`
-GID=`id -g`
+uname=$USER
+uid=`id -u`
+gid=`id -g`
 
 # checking if .env file already exists
 if [ -f ./.env ]; then
@@ -10,6 +10,6 @@ if [ -f ./.env ]; then
 fi
 
 # adding environment variables for docker-compose.yml
-echo "UNAME=$UNAME\nUID=$UID\nGID=$GID" | tee .env
+echo -e "UNAME=$uname\nUID=$uid\nGID=$gid" | tee .env
 
 echo "done!"
